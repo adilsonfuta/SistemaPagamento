@@ -1,19 +1,18 @@
 const express=require('express');
+const cors=require('cors');
+const rotas=require('./routes');
+
+
+
+
 const app=express();
+//app.use(cors());
 
+// app.use(cors({
+//         origin:'http:localhost:3000',
+// }))
 
-app.get('/',(req, res)=>{
-     return res.json('sucesso');
-});
+app.use(express.json());
+app.use(rotas);
 
-// CRUD Produto 
-
-app.post('/adicionarcliente',(req,res)=>{
-        const 
-});
-
-// CRUD Produto 
-
-
-
-app.listen(3333, ()=>console.log('server online'));
+app.listen(3333, ()=>console.log('****** Server Started *******'));

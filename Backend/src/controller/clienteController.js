@@ -1,19 +1,19 @@
-
-
 module.exports={
-
- async adicionarCliente(req, res){
-
+    // CRUD = CREATE READ UPDATE DELETE
+ async createCliente(req, res){
+    return res.json('criado com sucesso');
  },
 
- async eliminarCliente(req, res){
-
-
+ async readCliente(req, res){
+    return res.json('listado  com sucesso');
  },
- async atualizarCliente
 
+ async updateCliente(req, res){
+    return res.json('atualizado com sucesso');
+},
 
-
-
+ async deleteCliente(req, res){
+    return res.json('eliminado com sucesso');
+}
 
 };
