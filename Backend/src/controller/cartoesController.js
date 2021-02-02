@@ -18,7 +18,17 @@ async ValidadeCartao(req, res){
 
 async PoupancaBancaria(req, res){
     return res.json('criado com sucesso');
+},
+
+async transferencia(req, res){
+    const nome=20000;
+    return  res.json({
+        message: `transferencia de  ${nome} realizada com sucesso`
+    });
 }
 
+
+    
+      
 
 };

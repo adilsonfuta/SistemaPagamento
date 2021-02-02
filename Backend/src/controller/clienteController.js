@@ -20,7 +20,7 @@ module.exports={
         return res.json('sucesso');
     },
     
-    async FiltarCliente(req, res){
+    async filtarCliente(req, res){
         let nome=req.params.nome;
       
         return  res.json({
