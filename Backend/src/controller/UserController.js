@@ -19,6 +19,10 @@ module.exports={
 
     async sessaoInicial(req, res){
         return res.json('sucesso');
+    },
+
+    async listaNivelacessosPorUser(req,res){
+        return res.json('teste de nivel de acesso')
     }
 
 

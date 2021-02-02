@@ -1,27 +1,28 @@
 module.exports={
 
-async realizarCompra(req, res){
+async ConsultarConta(req, res){
     return res.json('criado com sucesso'); 
 },
 
-async listaProdutosComprados(req, res){
+async ListaHistoricoConta(req, res){
     return res.json('criado com sucesso');
 },
 
-async produtosMaisVendidos(req, res){
+async Saque(req, res){
     return res.json('criado com sucesso');
 },
 
-async faturaCompra(req, res){
+async ValidadeCartao(req, res){
     return res.json('criado com sucesso');
 },
 
-async ganhoDiario(req, res){
-    
+async PoupancaBancaria(req, res){
+    return res.json('criado com sucesso');
 }
 
 
 /* 
-  transferencia, saque, consultar, historico de transferencias, 
+    transferencia, saque, consultar, historico de transferencias, 
+    sobre o cartão (validade)
 */
 };
