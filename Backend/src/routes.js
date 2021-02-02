@@ -1,25 +1,27 @@
 const express=require('express');
 const routes=express.Router();
 
-const clienteController=require('./controller/clienteController');
-const compra=require('./controller/comprasController');
+const clienteController=require('./controller/bancoController');
+const compra=require('./controller/cartoesController');
 
 
 
 // rotas de clientes CRUD | other Methods
-routes.post('/clientes',clienteController.createCliente);
+routes.post('/addcliente',clienteController.createCliente);
 
-routes.get('/clientes',clienteController.readCliente);
+routes.get('/listarcliente',clienteController.readCliente);
 
-routes.put('cliente/:id',clienteController.updateCliente);
+routes.put('atualizarcliente/:id',clienteController.updateCliente);
 
-routes.delete('cliente/:id',clienteController.deleteCliente);
+routes.delete('eliminarcliente/:id',clienteController.deleteCliente);
+
+routes.get('/buscarumcliente/:nome',clienteController.informarClientes);
 
 // rotas de Produtos 
 
 
 // rotas de Compras e Produtos
 
-
+module.exports=routes;
 
 
