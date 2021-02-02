@@ -17,9 +17,9 @@ module.exports={
     },
     
 
-    async pesquisarProduto(req, res){
-        return res.json('sucesso');
-    }
+    // async pesquisarProduto(req, res){
+    //     return res.json('sucesso');
+    // }
 
 
 };

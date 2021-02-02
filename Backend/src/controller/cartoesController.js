@@ -21,8 +21,4 @@ async PoupancaBancaria(req, res){
 }
 
 
-/* 
-    transferencia, saque, consultar, historico de transferencias, 
-    sobre o cartão (validade)
-*/
 };
