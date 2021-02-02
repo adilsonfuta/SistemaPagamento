@@ -9,17 +9,24 @@ module.exports={
     }, 
 
     async  updateCliente(req, res){
-        return res.json('sucesso');
+        let id=req.params.id;
+    
+        return  res.json({
+           message: `Bem vindo Cliente ${id}`
+       });
     },
 
     async deleteCliente(req, res){
         return res.json('sucesso');
     },
     
-
-    // async pesquisarProduto(req, res){
-    //     return res.json('sucesso');
-    // }
+    async FiltarCliente(req, res){
+        let nome=req.params.nome;
+      
+        return  res.json({
+           message: `Bem vindo Cliente ${nome}`
+       });
+  }
 
 
 };

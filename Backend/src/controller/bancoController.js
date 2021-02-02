@@ -1,7 +1,16 @@
 module.exports={
-    // CRUD = CREATE READ UPDATE DELETE
+  
+  
+
  async createBanco(req, res){
-    return res.json('criado com sucesso');
+   let banco={
+      "id":1,
+      "nome":"BAI",
+      "sede":"Talatona",
+      "nfilial":5,
+      "datacriacao":"20/01/1982"
+   }
+    return res.json({banco});
  },
 
  async readBanco(req, res){
@@ -9,7 +18,11 @@ module.exports={
  },
 
  async updateBanco(req, res){
-    return res.json('atualizado com sucesso');
+     let id=req.params.id;
+    
+    return  res.json({
+       message: `Bem vindo Cliente ${id}`
+   });
 },
 
  async deleteBanco(req, res){
