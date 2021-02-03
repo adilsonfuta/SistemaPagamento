@@ -1,5 +1,7 @@
 module.exports={
 
+    // todas as operacoes aqui devem estar associadas a um usuario q tem cartao
+
 async ConsultarConta(req, res){
     return res.json('criado com sucesso'); 
 },
@@ -9,11 +11,14 @@ async ListaHistoricoConta(req, res){
 },
 
 async Saque(req, res){
-    return res.json('criado com sucesso');
+    const nome=req.params.valor;
+    return  res.json({
+        message: `Levantamento de: ${nome} realizada com sucesso!`
+    });
 },
 
 async ValidadeCartao(req, res){
-    return res.json('criado com sucesso');
+    return res.json('O prazo do seu cartao Expirou!');
 },
 
 async PoupancaBancaria(req, res){
@@ -26,9 +31,5 @@ async transferencia(req, res){
         message: `transferencia de  ${nome} realizada com sucesso`
     });
 }
-
-
-    
-      
 
 };
